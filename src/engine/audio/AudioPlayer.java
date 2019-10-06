@@ -3,6 +3,7 @@ package engine.audio;
 import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
+import java.util.HashMap;
 import java.util.Queue;
 
 import javax.sound.sampled.AudioInputStream;
