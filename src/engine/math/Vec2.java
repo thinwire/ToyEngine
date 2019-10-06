@@ -44,6 +44,18 @@ public class Vec2 {
     }
 
     /**
+     * Vector addition. Add X and Y components to this vector's X and Y components
+     * and return the result as a new vector.
+     *
+     * @param x X component value
+     * @param y Y component value
+     * @return a new Vec2 object
+     */
+    public Vec2 add(double x, double y) {
+    	return new Vec2(this.x + x, this.y + y);
+    }
+
+    /**
      * Vector subtraction. Subtract the components of another vector from the
      * components of this vector and return the result as a new vector.
      * 
@@ -52,6 +64,18 @@ public class Vec2 {
      */
     public Vec2 sub(final Vec2 v) {
         return new Vec2(x - v.x, y - v.y);
+    }
+    
+    /**
+     * Vector subtraction. Subtract x and y from this vector's X and Y components
+     * and return the result as a new vector.
+     * 
+     * @param x X component value
+     * @param y Y component value
+     * @return a new Vec2 object
+     */
+    public Vec2 sub(double x, double y) {
+    	return new Vec2(this.x + x, this.y + y);
     }
 
     /**
