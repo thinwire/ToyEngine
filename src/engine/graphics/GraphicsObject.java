@@ -94,6 +94,20 @@ public abstract class GraphicsObject implements Drawable {
     }
 
     /**
+     * Set the position of this graphics object using a vector.
+     * The position is in absolute screen coordinates;
+     * 0, 0 is at the top left corner of the screen.
+     * X grows toward the right and Y grows toward the
+     * bottom.
+     * 
+     * @param v a Vec2 object representing the object's new position
+     */
+    public void setPosition(final Vec2 p) {
+        pos_x = p.x;
+        pos_y = p.y;
+    }
+    
+    /**
      * Return the position of this graphics object as a
      * 2D vector.
      * 
@@ -113,6 +127,17 @@ public abstract class GraphicsObject implements Drawable {
     public void move(double dx, double dy) {
         pos_x += dx;
         pos_y += dy;
+    }
+
+    /**
+     * Change the position of this graphics object using a vector. 
+     * The components will be added to the current position values.
+     * 
+     * @param d a Vec2 representing change in the X and Y direction
+     */
+    public void move(final Vec2 d) {
+        pos_x += d.x;
+        pos_y += d.y;
     }
 
     /**
