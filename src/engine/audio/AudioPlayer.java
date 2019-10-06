@@ -60,7 +60,7 @@ public class AudioPlayer {
 						}
 					});
 					clipCache.put(f, audio);
-				}
+				} else audio = clipCache.get(f);
 				audio.start();
 			
 			} catch(IOException ioex) {
