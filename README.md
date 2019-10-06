@@ -75,6 +75,7 @@ public class MyGame extends Application {
 
 	public static void main(String[] args) {
 		new MyGame().run();
+		System.exit(0);
 	}
 }
 ~~~
@@ -109,6 +110,10 @@ public class MyGame extends Application {
 	// the window or by calling Application.exit() in code.
 	public static void main(String[] args) {
 		new MyGame().run();
+		
+		// Explicitly exit Java so that any and all dangling background
+		// threads are properly killed off...
+		System.exit(0);
 	}
 
 }
