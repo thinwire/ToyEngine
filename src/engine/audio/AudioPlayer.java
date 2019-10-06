@@ -61,6 +61,7 @@ public class AudioPlayer {
 					});
 					clipCache.put(f, audio);
 				} else audio = clipCache.get(f);
+				audio.setFramePosition(0);
 				audio.start();
 			
 			} catch(IOException ioex) {
