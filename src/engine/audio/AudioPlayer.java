@@ -35,25 +35,31 @@ public class AudioPlayer {
 			}		
 		}
 		
+		private HashMap<File, Clip> clipCache = new HashMap<>();
+		
 		private void playFile(File f) {
 			AudioInputStream ss = null;
 			
 			try {
-				final AudioInputStream stream = AudioSystem.getAudioInputStream(f);
-				ss = stream;
+				Clip audio;
+				if(!clipCache.containsKey(f)) {
+					final AudioInputStream stream = AudioSystem.getAudioInputStream(f);
+					ss = stream;
 
-				final Clip audio = AudioSystem.getClip();
-				audio.open(stream);
-				audio.addLineListener(new LineListener() {
-					@Override
-					public void update(LineEvent event) {
-						Type eventType = event.getType();
-						if (eventType == Type.STOP || eventType == Type.CLOSE) {
-							audio.close();
-							closeStream(stream);
+					audio = AudioSystem.getClip();
+					audio.open(stream);
+					audio.addLineListener(new LineListener() {
+						@Override
+						public void update(LineEvent event) {
+							Type eventType = event.getType();
+							if (eventType == Type.STOP || eventType == Type.CLOSE) {
+								audio.close();
+								closeStream(stream);
+							}
 						}
-					}
-				});
+					});
+					clipCache.put(f, audio);
+				}
 				audio.start();
 			
 			} catch(IOException ioex) {
