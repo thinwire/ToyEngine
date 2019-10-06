@@ -24,9 +24,7 @@ Note: it is recommended to save the ToyEngine project under your Eclipse workspa
 
 Use your GUI of choice to clone the repository (e.g. [like this](https://confluence.atlassian.com/sourcetreekb/clone-a-repository-into-sourcetree-780870050.html) in Atlassian SourceTree) or use a console command:
 
-`git clone https://github.com/thinwire/toyengine.git ToyEngine`
-
-The first parameter is the path to the repository you wish to clone, the second parameter is the target directory you want to store the cloned project under. Not providing the second directory would use the name of the repository (in this case `toyengine`) as the directory name. 
+`git clone https://github.com/thinwire/ToyEngine.git`
 
 ### Step 1b (optional): clone the Awesome Space Game
 
@@ -122,7 +120,7 @@ From the Eclipse window menu, select `Run` and then `Run`, or press the green bu
 
 ### Step 5b (optional): run the Awesome Space Game
 
-Open up the file `src/SpaceGame.java` in the Awesome Space Game project and follow the instructions above. Awesome Space Game should start up and let you play.
+Open up the file `src/spacegame/SpaceGame.java` in the Awesome Space Game project and follow the instructions above. Awesome Space Game should start up and let you play.
 
 
 ## License
