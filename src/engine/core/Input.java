@@ -9,9 +9,14 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Class for handling user input. We only support up/down/left/right directional
- * input, a fire button and a menu/exit button. These are currently mapped to UP
- * ARROW, DOWN ARROW, LEFT ARROW, RIGHT ARROW, SPACE and ESCAPE, respectively.
+ * Class for handling user input.
+ * Any Java Virtual Keycode can be mapped to any named input
+ * action. 
+ *
+ * By default we provide "LEFT", "RIGHT", "UP", "DOWN",
+ * "FIRE" and "EXIT", mapped to left arrow, right arrow, up arrow,
+ * down array, space and escape, respectively: this mapping
+ * is defined in the Application class.
  */
 public class Input {
 
