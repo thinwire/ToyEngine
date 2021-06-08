@@ -105,7 +105,7 @@ public class MyGame extends Application {
 
 	// Main program entry point, aka. where Java starts running code
 	// from. Create an instance of our class and call the run() 
-	// method it inherits from Application start our game. The run()
+	// method it inherits from Application to start our game. The run()
 	// method will not exit until the game is closed, either by closing
 	// the window or by calling Application.exit() in code.
 	public static void main(String[] args) {
@@ -121,11 +121,11 @@ public class MyGame extends Application {
 
 ### Step 5: Start the game
 
-From the Eclipse window menu, select `Run` and then `Run`, or press the green button with the same icon in the main Eclipse toolbar to run the game. Make sure the `Project` and `Main Class` fields refer to your game and main class, then select the `Run` button in the lower  right of the window. The game should start and you should see a window of the size you specified in the main class pop up, with the title "Untitled Game".  
+From the Eclipse window menu, select `Run` and then `Run`, or press the green button with the same icon in the main Eclipse toolbar to run the game. Make sure the `Project` and `Main Class` fields refer to your game and main class, then select the `Run` button in the lower right of the window. The game should start and you should see a window of the size you specified in the main class pop up, with the title "Untitled Game".  
 
 ### Step 5b (optional): run the Awesome Space Game
 
-Open up the file `src/spacegame/SpaceGame.java` in the Awesome Space Game project and follow the instructions above. Awesome Space Game should start up and let you play.
+Open up the file `src/spacegame/SpaceGame.java` in the Awesome Space Game project and follow the instructions above. Awesome Space Game should start up and let you play it.
 
 
 ## License
