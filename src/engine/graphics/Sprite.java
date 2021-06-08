@@ -130,10 +130,9 @@ public class Sprite extends GraphicsObject {
         }
 
         // Figure out screen coordinates for where to draw the sprite.
-        // We want to center the sprite on its position, so we need to
-        // subtract half the width and the height of the sprite from
-        // the coordinate - otherwise the sprite would show up with its
-        // top left corner at the indicated position, and that just looks wrong. :)
+        // We use the offset variables to shift the image such that the
+        // sprite's coordinate matches up with the offset position in
+        // the image (by default the center of the image).
         int x = (int) ((getX() - offset_x) + 0.5);
         int y = (int) ((getY() - offset_y) + 0.5);
 
