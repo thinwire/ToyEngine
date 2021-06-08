@@ -54,7 +54,7 @@ public class EMath {
      *              wrapping around
      * @param max   the maximum limit - the value can not go higher than this
      *              without wrapping around
-     * @return the convined value
+     * @return the confined value
      */
     public static final double wrap(final double value, final double min, final double max) {
         if (min == max) {
